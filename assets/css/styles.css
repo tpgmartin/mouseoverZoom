@@ -1,0 +1,13 @@
+img {
+  height: 500px;
+}
+
+#your_div_id {
+  display: none;
+  border: 1px solid black;
+  z-index: 1000;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  cursor: pointer;
+}
