@@ -1,10 +1,20 @@
-$('img').mouseover(function() {
-  $('#your_div_id').css('display', 'block');
+$('#default').mouseover(function() {
+  $('#mouseover').css('display', 'block');
 });
 
-$('img').on('mousemove', function(e){
-    $('#your_div_id').css({
-       left:  e.pageX - 20,
-       top:   e.pageY - 20
+$('#default').on('mousemove', function(e){
+    $('#mouseover').css({
+       left:  e.pageX - 50,
+       top:   e.pageY - 50
     });
+    var left_percent = -(e.pageX  / 485)*300;
+    var top_percent = -(e.pageY / 500)*300;
+    $('#zoomed-in').css({
+       left: left_percent.toString() + "%",
+       top: top_percent.toString() + "%"
+    });
+});
+
+$('#default').on('mouseleave', function() {
+  $('#mouseover').css('display', 'none');
 });

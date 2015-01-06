@@ -1,13 +1,29 @@
-img {
+#default {
   height: 500px;
+  width: 485px;
 }
 
-#your_div_id {
+#mouseover {
   display: none;
   border: 1px solid black;
   z-index: 1000;
-  height: 40px;
-  width: 40px;
+  height: 100px;
+  width: 100px;
   position: absolute;
   cursor: pointer;
+}
+
+#crop {
+  overflow: hidden;
+  height: 500px;
+  width: 485px;
+  position: relative;
+  display: inline-block;
+}
+
+#zoomed-in {
+  zoom: 1;
+  position: absolute;
+  left: -50%;
+  top: -50%;
 }
