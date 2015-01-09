@@ -1,0 +1,13 @@
+{
+  "name": "mouseover-zoom",
+  "version": "1.0.0",
+  "homepage": "https://github.com/tpgmartin/mouseoverZoom",
+  "authors": [
+    "Tom Martin <tom@tpgmartin.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+  ]
+}
